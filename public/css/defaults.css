@@ -48,17 +48,6 @@
 }
 
 /* FONTS */
-.font-playfair {
-  font-family: var(--kelvin-font-playfair);
-}
-
-.font-default {
-  font-family: var(--bs-body-font-family);
-}
-
-.fs-7 {
-  font-size: 0.75rem !important;
-}
 
 /* CURSORS */
 .cursor-default {
@@ -82,21 +71,6 @@
 /* COLORS */
 
 /* TEXT */
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Arial Black", Roboto, serif;
-  letter-spacing: -1px;
-}
-
-h1 small,
-h2 small,
-h3 small,
-h4 small {
-  font-family: Arial, Roboto, serif;
-  letter-spacing: -1px;
-}
 
 /* LOADER */
 div.loader-global {
@@ -145,100 +119,9 @@ div.loader-global .progress-bar .progress {
 /* WIDTH & HEIGHT */
 
 /* POSITION */
-.end-1 {
-  right: 1em !important;
-}
-
-.end-2 {
-  right: 2em !important;
-}
-
-.end-3 {
-  right: 3em !important;
-}
-
-.bottom-1 {
-  bottom: 1em !important;
-}
-
-.bottom-2 {
-  bottom: 2em !important;
-}
 
 /* Z-INDEX */
 
 /* BUTTONS */
 
-/* TOAST */
-.alert {
-  max-width: 300px;
-  min-width: 250px;
-}
-
-.alert:not(.show) {
-  display: none;
-  /*-webkit-animation-name: fadeOut;*/
-  /*animation-name: fadeOut;*/
-}
-
-/* Fix for bootstrap: 1st button is moved 1px to the right */
-.btn-group > button:first-child {
-  left: -1px;
-  position: relative;
-}
-
 /* FORMS */
-h2 input[type=text].form-control-flat {
-  font-size: 1.6rem;
-  width: 80%;
-}
-
-h2 input[type=text].form-control-flat::placeholder {
-  color: var(--bs-gray-500);
-}
-
-input[type=text].form-control-flat,
-textarea.form-control-flat {
-  border-color: rgba(255, 255, 255, 0);
-  font-family: var(--kelvin-font-playfair);
-}
-
-h2 input[type=text]:focus,
-textarea.form-control-flat:focus {
-  border-color: var(--bs-border-color);
-}
-
-.form-check-input-label[type=radio] {
-  border-color: var(--bs-gray);
-  font-size: 10px;
-  margin: 9px 0 0 8px;
-}
-
-.form-check-input-label[type=radio]:checked {
-  background-color: var(--bs-dark);
-  /*background-color: var(--bs-gray-900);*/
-  /*border-color: var(--bs-gray-900);*/
-  border: none;
-}
-
-.form-check-input:checked[type=radio] {
-  --bs-form-check-bg-image: none;
-}
-
-.form-control:focus,
-.form-check-input-label[type=radio]:focus {
-  border-color: var(--bs-gray-500);
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-ul.dropdown-menu-digit {
-  --bs-dropdown-min-width: fit-content;
-  /*min-width: fit-content;*/
-}
-
-/* WIZARD */
-div.wizard-nav {
-  min-width: 280px;
-}
-
