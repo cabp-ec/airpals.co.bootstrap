@@ -17,7 +17,7 @@ export const PageHeader: React.FC<PageHeaderInterface> = ({ title, paragraphs }:
     return nodes;
   };
 
-  return <div className="text-center mt-5">
+  return <div className="text-center mt-5 ">
     <h4>{ title }</h4>
     { renderParagraphs() }
   </div>;
