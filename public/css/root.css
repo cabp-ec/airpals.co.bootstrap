@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*!
+ * AirPals Demo  v1.0.0-alpha1 (https://airpals.carlos-bucheli.com/)
+ * Copyright 2020-2025 The Author
+ */
+#root {
+  height: 100vh;
+  width: 100%;
+}
+
+[data-bs-theme=light]
+  /*[data-bs-theme=dark]*/
+{
+}
+
+/* BODY */
+html,
+body {
+  height: 100vh;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body *,
+body *:focus {
+  outline: none !important;
+}

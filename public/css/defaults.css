@@ -1,0 +1,244 @@
+/* ANIMATIONS */
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes indeterminateAnimation {
+  0% {
+    transform: translateX(0) scaleX(0);
+  }
+  40% {
+    transform: translateX(0) scaleX(0.4);
+  }
+  100% {
+    transform: translateX(100%) scaleX(0.5);
+  }
+}
+
+/* FONTS */
+.font-playfair {
+  font-family: var(--kelvin-font-playfair);
+}
+
+.font-default {
+  font-family: var(--bs-body-font-family);
+}
+
+.fs-7 {
+  font-size: 0.75rem !important;
+}
+
+/* CURSORS */
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-wait {
+  cursor: wait;
+}
+
+.cursor-move,
+.cursor-move *,
+.cursor-move *:before {
+  cursor: move !important;
+}
+
+/* COLORS */
+
+/* TEXT */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Arial Black", Roboto, serif;
+  letter-spacing: -1px;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small {
+  font-family: Arial, Roboto, serif;
+  letter-spacing: -1px;
+}
+
+/* LOADER */
+div.loader-global {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+div.loader-global {
+  background: var(--bs-body-bg);
+  /*background: rgb(255, 255, 255);*/
+  /*background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5046393557422969) 100%);*/
+  /*background: rgb(43, 43, 43);*/
+  /*background: linear-gradient(0deg, rgba(43, 43, 43, 1) 0%, rgba(43, 43, 43, 1) 93%, rgba(43, 43, 43, 0) 100%);*/
+}
+
+div.loader-global .wrapper {
+  max-width: 300px;
+  position: relative;
+  top: -20vh;
+  width: 100%;
+}
+
+div.loader-global .wrapper img.logo {
+  max-width: 100px;
+}
+
+div.loader-global .progress-bar {
+  background: rgba(65, 65, 65, 0);
+  border-top: 1px solid rgba(65, 65, 65, 0.5);
+  height: auto;
+  width: 100%;
+}
+
+div.loader-global .progress-bar .progress {
+  animation: indeterminateAnimation 1s infinite linear;
+  background-color: #343426;
+  height: 1px;
+  transform-origin: 0 50%;
+}
+
+/* MARGIN & PADDING */
+
+/* WIDTH & HEIGHT */
+
+/* POSITION */
+.end-1 {
+  right: 1em !important;
+}
+
+.end-2 {
+  right: 2em !important;
+}
+
+.end-3 {
+  right: 3em !important;
+}
+
+.bottom-1 {
+  bottom: 1em !important;
+}
+
+.bottom-2 {
+  bottom: 2em !important;
+}
+
+/* Z-INDEX */
+
+/* BUTTONS */
+
+/* TOAST */
+.alert {
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.alert:not(.show) {
+  display: none;
+  /*-webkit-animation-name: fadeOut;*/
+  /*animation-name: fadeOut;*/
+}
+
+/* Fix for bootstrap: 1st button is moved 1px to the right */
+.btn-group > button:first-child {
+  left: -1px;
+  position: relative;
+}
+
+/* FORMS */
+h2 input[type=text].form-control-flat {
+  font-size: 1.6rem;
+  width: 80%;
+}
+
+h2 input[type=text].form-control-flat::placeholder {
+  color: var(--bs-gray-500);
+}
+
+input[type=text].form-control-flat,
+textarea.form-control-flat {
+  border-color: rgba(255, 255, 255, 0);
+  font-family: var(--kelvin-font-playfair);
+}
+
+h2 input[type=text]:focus,
+textarea.form-control-flat:focus {
+  border-color: var(--bs-border-color);
+}
+
+.form-check-input-label[type=radio] {
+  border-color: var(--bs-gray);
+  font-size: 10px;
+  margin: 9px 0 0 8px;
+}
+
+.form-check-input-label[type=radio]:checked {
+  background-color: var(--bs-dark);
+  /*background-color: var(--bs-gray-900);*/
+  /*border-color: var(--bs-gray-900);*/
+  border: none;
+}
+
+.form-check-input:checked[type=radio] {
+  --bs-form-check-bg-image: none;
+}
+
+.form-control:focus,
+.form-check-input-label[type=radio]:focus {
+  border-color: var(--bs-gray-500);
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+ul.dropdown-menu-digit {
+  --bs-dropdown-min-width: fit-content;
+  /*min-width: fit-content;*/
+}
+
+/* WIZARD */
+div.wizard-nav {
+  min-width: 280px;
+}
+
