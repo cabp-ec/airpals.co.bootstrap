@@ -8,7 +8,10 @@ const MqPlacesSearch = (input: HTMLInputElement, onResultSelect: (result) => voi
     useDeviceLocation: true,
     limit: 3,
     collection: [
-      'poi'
+      'poi',
+      'airport',
+      'address',
+      'adminArea'
     ],
     templates: {
       value: (result) => (result.name),
