@@ -1,15 +1,34 @@
-import React  from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import { SearchFormInterface } from './search.form.interface';
 import { Icon } from '../../particles/icon';
-import { SearchResult } from '../../atoms/search.result/search.result';
+import PlacesSearchContext from '../../../app/context/places.search.context';
 
-export const SearchForm: React.FC<SearchFormInterface> = (props: SearchFormInterface) => {
+/**
+ * SearchForm Component
+ *
+ * @param props
+ * @constructor
+ */
+export const SearchForm: React.FC<SearchFormInterface> = ({ onResultSelect }: SearchFormInterface) => {
+  const placesSearch = useContext(PlacesSearchContext);
+  const refInput = useRef(null);
+
+  useEffect(() => refInput.current
+    ? placesSearch.setup(refInput.current as HTMLInputElement, onResultSelect)
+    : null, [placesSearch, onResultSelect]);
+
   return <>
-    <form className="d-flex justify-content-center align-items-center border border-secondary-subtle rounded shadow-sm">
-      <Icon icon="geo-alt-fill" className="px-3"/>
-      <input type="text" className="form-control border-0 ps-0"/>
+    <Icon icon="geo-alt-fill" className="icon-search-input px-3"/>
+    <form
+      className="form-place-search bg-white rounded border border-secondary-subtle rounded shadow-sm"
+    >
+      <input
+        ref={ refInput }
+        type="search"
+        id="search-input"
+        placeholder="Start Searching..."
+        className="form-control bg-transparent border-0 px-5"
+      />
     </form>
-
-    <SearchResult/>
   </>;
 };

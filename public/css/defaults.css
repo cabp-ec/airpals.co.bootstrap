@@ -83,10 +83,6 @@ div.loader-global {
 
 div.loader-global {
   background: var(--bs-body-bg);
-  /*background: rgb(255, 255, 255);*/
-  /*background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5046393557422969) 100%);*/
-  /*background: rgb(43, 43, 43);*/
-  /*background: linear-gradient(0deg, rgba(43, 43, 43, 1) 0%, rgba(43, 43, 43, 1) 93%, rgba(43, 43, 43, 0) 100%);*/
 }
 
 div.loader-global .wrapper {
@@ -125,3 +121,15 @@ div.loader-global .progress-bar .progress {
 /* BUTTONS */
 
 /* FORMS */
+form.form-place-search span.mq-place-search {
+  width: 100%;
+}
+
+form.form-place-search span.mq-place-search {
+  width: 100%;
+}
+
+i.icon-search-input {
+  position: relative;
+  top: 32px;
+}
