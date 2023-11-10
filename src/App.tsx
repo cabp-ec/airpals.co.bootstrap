@@ -54,7 +54,7 @@ const App = () => {
    *
    * @param result
    */
-  const onResultSelect = (result) => {
+  const onResultSelect = (result: object) => {
     setSelectedResult(result);
     setValidResult(placesSearch.validateResult(result));
   };
